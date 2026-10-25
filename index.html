@@ -1,44 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>Springtime In Michigan</title>
-  <!-- You will need to link to the CSS file -->
-  <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nature Gallery - Home</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
+
+  <!-- Skip to Main Content Link -->
+  <a href="#main-content" class="skip-link">Skip to Main Content</a>
+
   <header>
+    <h1>Nature Explorers</h1>
     <nav>
       <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="neighborhood.html">Neighborhood Walks</a></li>
-        <li><a href="parks.html">Walks in the Park</a></li>
+        <li><a href="index.html">Home (Grid)</a></li>
+        <li><a href="gallery.html">Gallery (Flex)</a></li>
+        <li><a href="about.html">About</a></li>
       </ul>
     </nav>
-    <img src="images/BaconGallupPark.jpg" width="200" alt="Brown Labradoodle sitting next to a statue.">
-    <h1>Springtime in Michigan</h1>
   </header>
-  <main>
-    <p>Springtime in <a href="https://www.michigan.org/city/ann-arbor">Ann Arbor</a> is a beautiful time. Even though
-      it can be chilly at times, it is nice to walk my dog Bacon. This site includes some pictures I have taken on
-      these walks. </p>
 
-    <p>Sometimes we walk around the neighborhood, other times we make it to the woods. Ann Arbor also has some
-      beautiful lakes and rivers including the <a
-        href="https://www.annarbor.org/things-to-do/recreation-outdoors/huron-river/">Huron River Watertrail</a> and
-      the <a href="https://www.a2gov.org/departments/Parks-Recreation/parks-places/argo/pages/default.aspx">Argo Park
-        Cascades</a>.</p>
+  <main id="main-content">
+    <h2>Featured Landscapes (CSS Grid)</h2>
+    <p>Explore beautiful nature scenes organized using CSS Grid layout.</p>
 
+    <div class="grid-container">
+      <div class="grid-item">
+        <img src="https://picsum.photos/id/1015/400/300" alt="River winding through mountains">
+        <h3>Mountain River</h3>
+      </div>
+      <div class="grid-item">
+        <img src="https://picsum.photos/id/1018/400/300" alt="Lush green forest hills">
+        <h3>Deep Forest</h3>
+      </div>
+      <div class="grid-item">
+        <img src="https://picsum.photos/id/1025/400/300" alt="Pug wrapped in a blanket in nature">
+        <h3>Wildlife Encounter</h3>
+      </div>
+      <div class="grid-item">
+        <img src="https://picsum.photos/id/1039/400/300" alt="Waterfall dropping into a misty pool">
+        <h3>Waterfall Haven</h3>
+      </div>
+      <div class="grid-item">
+        <img src="https://picsum.photos/id/1043/400/300" alt="Calm ocean waves at sunset">
+        <h3>Ocean Sunset</h3>
+      </div>
+    </div>
   </main>
+
   <footer>
-    <p>This page was originally created by Colleen van Lent for the <a
-        href="https://www.coursera.org/specializations/web-design"> Web Design for Everybody</a> Specialization.
-      Specialization. Students are invited to make changes.</p>
+    <p>&copy; 2026 Nature Explorers. All rights reserved.</p>
   </footer>
 
 </body>
-
 </html>
